@@ -10,5 +10,6 @@ ___
 ___
 
 ## 스터디 커리큘럼
-공부내용은 README.md 파일에 올리고, 실습 코드는 그대로 레포에 제출
+공부내용은 README.md 파일에 올리고, 실습 코드는 그대로 레포에 제출.  
+실습 방식은 HTML 코드가 주어지고 VSC에서 live server로 포트를 열고 해당 port에서 크롤링을 하는 식으로 진행.
 ![ ](presentation/DCS_plan.png)
