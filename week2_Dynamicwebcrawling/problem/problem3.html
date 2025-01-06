@@ -1,0 +1,18 @@
+<html>
+  <head><title>Ajax Data</title></head>
+  <body>
+    <ul id="product-list"></ul>
+    <script>
+      fetch("https://example.com/api/products")
+        .then(response => response.json())
+        .then(data => {
+          const list = document.getElementById("product-list");
+          data.forEach(product => {
+            const li = document.createElement("li");
+            li.textContent = `${product.name}: ${product.price}`;
+            list.appendChild(li);
+          });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Infinite Scroll</title>
+    <style>
+      body {
+        margin: 0;
+        height: 200vh; 
+      }
+      .item {
+        margin: 20px;
+        padding: 10px;
+        background: #f0f0f0;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <script>
+      let counter = 3;
+      window.addEventListener("scroll", () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+          const newItem = document.createElement("div");
+          newItem.className = "item";
+          newItem.textContent = `Item ${counter++}`;
+          document.body.appendChild(newItem);
+        }
+      });
+    </script>
+  </body>
+</html>

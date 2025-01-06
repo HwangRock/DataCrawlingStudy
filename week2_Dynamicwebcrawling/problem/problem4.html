@@ -1,0 +1,15 @@
+<html>
+  <head><title>Live Scores</title></head>
+  <body>
+    <div class="score">0 - 0</div>
+    <script>
+      let scoreA = 0;
+      let scoreB = 0;
+      setInterval(() => {
+        scoreA += Math.floor(Math.random() * 3);
+        scoreB += Math.floor(Math.random() * 3);
+        document.querySelector(".score").textContent = `${scoreA} - ${scoreB}`;
+      }, 5000);
+    </script>
+  </body>
+</html>
