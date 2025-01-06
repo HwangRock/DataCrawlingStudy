@@ -7,14 +7,14 @@ ___
 
 ## 이론
 ## 웹 크롤링의 구조
-<img src="theory/structure.PNG" width="300" alt="웹 크롤링 구조"><br>
+<img src="theory/structure.PNG" width="400" alt="웹 크롤링 구조"><br>
 웹 크롤링은 렌더링과 동일하게 서버로부터 웹 페이지의 데이터를 받아오지만, 크롤러가 HTML만을 받아서
  찾는 HTML에서 찾는 데이터만을 탐색하는 데이터 탐색 기법이다.
 
 <br>
 
 ## HTML의 구조
-<img src="theory/domtree.PNG" width="300" alt="HTML 구조"><br>
+<img src="theory/domtree.PNG" width="400" alt="HTML 구조"><br>
 HTML은 DOM tree의 구조를 따른다.  
 DOM tree는 html을 루트로 하고, 그 자식 노드는 head, body로 
 구성되며 그 밑에는 여러 속성들로 구성된다.   
